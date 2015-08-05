@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+    @ViewBag.ListaAnimales
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            nombre
+        </th>
+        <th>
+            raza
+        </th>
+        <th>
+            Especie
+        </th>
+
+
+    </tr>
+
+    @foreach (var item in @ViewBag.ListaAnimales)
+    {
+        <tr>
+            <td>
+                @item.Nombre
+            </td>
+            <td>
+                @item.Especie
+            </td>
+            <td>
+                @item.Raza
+            </td>
+
+
+        </tr>
+    }
+
+</table>
+

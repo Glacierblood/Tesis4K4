@@ -1,0 +1,122 @@
+﻿@model FinalTest1.Models.Entidades.Adopcion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Adopcion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.estadoAdopcion.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estadoAdopcion.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipoAdopcion.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipoAdopcion.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.voluntarioId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.voluntarioId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.admId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.admId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.esTemporal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.esTemporal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaAlta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaAlta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaBaja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaBaja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaConfirmacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaConfirmacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaCancelacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaCancelacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaEntrega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.importe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.importe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaFinColaboracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaFinColaboracion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

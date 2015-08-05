@@ -1,0 +1,113 @@
+﻿@model FinalTest1.ViewModel.AdopcionViewModel
+@using Microsoft.AspNet.Identity
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+
+@Html.Label("User", User.Identity.GetUserName())
+@Html.Hidden("UserId",User.Identity.GetUserId())
+
+    <table class="table" id="myTable">
+        <thead>
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Raza
+               </th>
+                <th>
+                   tamanio
+                </th>            
+             
+                <th>
+                    edad
+                </th>
+                
+                <th>
+                   caracteristicas
+                </th>
+                <td>
+                   ADOMPTAME!
+                </td>
+                
+               
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.animal)
+            {
+                if(item.enAdopcion == true){
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.raza.nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.tamanio.nombre)
+                    </td>
+                    
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.edad)
+                    </td>
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.caracteristicas)
+                    </td>
+                    <td>
+                        @Html.RadioButton("selectedAnimal",item.Id)
+                    </td>
+                    
+                    
+                </tr>
+                }
+            }
+        </tbody>
+
+    </table>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" id="selectedAnimalId" />
+
+    
+
+
+}
+
+
+<button id="testButton"> Pruebame </button> 
+<!--<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" value="Create" class="btn btn-default" />
+    </div>
+</div>-->
+<script src="~/scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("input[name=selectedAnimal").change(function () {
+            //cada vez que el estado de un radio button cambia, asignamos a nuestro campo hiden el valor del readio seleccionado, que en este caso es el id del animal seleccionado
+            $("#selectedAnimalId").val($('input[name=selectedAnimal]:checked').val());
+            
+        })
+        $("#testButton").on("click", function () {
+            alert($("#selectedAnimalId").val());
+        })
+
+
+    })
+
+</script>
+
+
+
+
+

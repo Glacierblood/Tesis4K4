@@ -1,0 +1,105 @@
+﻿@model IEnumerable<FinalTest1.Models.Entidades.Adopcion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.estadoAdopcion.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tipoAdopcion.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.voluntarioId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.admId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.esTemporal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaAlta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaBaja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaConfirmacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaCancelacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaEntrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaFin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.importe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaFinColaboracion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.estadoAdopcion.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipoAdopcion.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.voluntarioId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.admId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.esTemporal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaAlta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaBaja)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaConfirmacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaCancelacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaEntrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaFin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.importe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaFinColaboracion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
