@@ -201,6 +201,34 @@
     <Compile Include="Contextos\AERMigrations\201507291533558_AnimalesUpdate8.Designer.cs">
       <DependentUpon>201507291533558_AnimalesUpdate8.cs</DependentUpon>
     </Compile>
+    <Compile Include="Contextos\AERMigrations\201508052027360_AnimalesUpdate9.cs" />
+    <Compile Include="Contextos\AERMigrations\201508052027360_AnimalesUpdate9.Designer.cs">
+      <DependentUpon>201508052027360_AnimalesUpdate9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contextos\AERMigrations\201508052333050_AnimalesUpdate10.cs" />
+    <Compile Include="Contextos\AERMigrations\201508052333050_AnimalesUpdate10.Designer.cs">
+      <DependentUpon>201508052333050_AnimalesUpdate10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contextos\AERMigrations\201508052359189_AnimalesUpdate11.cs" />
+    <Compile Include="Contextos\AERMigrations\201508052359189_AnimalesUpdate11.Designer.cs">
+      <DependentUpon>201508052359189_AnimalesUpdate11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contextos\AERMigrations\201508060324095_AnimalesUpdate12.cs" />
+    <Compile Include="Contextos\AERMigrations\201508060324095_AnimalesUpdate12.Designer.cs">
+      <DependentUpon>201508060324095_AnimalesUpdate12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contextos\AERMigrations\201508060348521_AnimalesUpdate13.cs" />
+    <Compile Include="Contextos\AERMigrations\201508060348521_AnimalesUpdate13.Designer.cs">
+      <DependentUpon>201508060348521_AnimalesUpdate13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contextos\AERMigrations\201508060424329_AnimalesUpdate14.cs" />
+    <Compile Include="Contextos\AERMigrations\201508060424329_AnimalesUpdate14.Designer.cs">
+      <DependentUpon>201508060424329_AnimalesUpdate14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contextos\AERMigrations\201508061828441_AnimalesUpdate15.cs" />
+    <Compile Include="Contextos\AERMigrations\201508061828441_AnimalesUpdate15.Designer.cs">
+      <DependentUpon>201508061828441_AnimalesUpdate15.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contextos\AERMigrations\Configuration.cs" />
     <Compile Include="Contextos\IdentityDb.cs" />
     <Compile Include="Contextos\IdentityMigrations\201507272036174_InitialCreate.cs" />
@@ -213,6 +241,8 @@
     </Compile>
     <Compile Include="Contextos\IdentityMigrations\Configuration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdopcionBORRAR2Controller.cs" />
+    <Compile Include="Controllers\AdopcionBORRARController.cs" />
     <Compile Include="Controllers\EntityControllers\AccionController.cs" />
     <Compile Include="Controllers\EntityControllers\AdopcionController.cs" />
     <Compile Include="Controllers\EntityControllers\AnimalController.cs" />
@@ -435,6 +465,16 @@
     <Content Include="Views\Adopcion\Details.cshtml" />
     <Content Include="Views\Adopcion\Edit.cshtml" />
     <Content Include="Views\Adopcion\Index.cshtml" />
+    <Content Include="Views\AdopcionBORRAR\Create.cshtml" />
+    <Content Include="Views\AdopcionBORRAR\Delete.cshtml" />
+    <Content Include="Views\AdopcionBORRAR\Details.cshtml" />
+    <Content Include="Views\AdopcionBORRAR\Edit.cshtml" />
+    <Content Include="Views\AdopcionBORRAR\Index.cshtml" />
+    <Content Include="Views\AdopcionBORRAR2\Create.cshtml" />
+    <Content Include="Views\AdopcionBORRAR2\Delete.cshtml" />
+    <Content Include="Views\AdopcionBORRAR2\Details.cshtml" />
+    <Content Include="Views\AdopcionBORRAR2\Edit.cshtml" />
+    <Content Include="Views\AdopcionBORRAR2\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -477,6 +517,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Contextos\AERMigrations\201507291533558_AnimalesUpdate8.resx">
       <DependentUpon>201507291533558_AnimalesUpdate8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contextos\AERMigrations\201508052027360_AnimalesUpdate9.resx">
+      <DependentUpon>201508052027360_AnimalesUpdate9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contextos\AERMigrations\201508052333050_AnimalesUpdate10.resx">
+      <DependentUpon>201508052333050_AnimalesUpdate10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contextos\AERMigrations\201508052359189_AnimalesUpdate11.resx">
+      <DependentUpon>201508052359189_AnimalesUpdate11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contextos\AERMigrations\201508060324095_AnimalesUpdate12.resx">
+      <DependentUpon>201508060324095_AnimalesUpdate12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contextos\AERMigrations\201508060348521_AnimalesUpdate13.resx">
+      <DependentUpon>201508060348521_AnimalesUpdate13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contextos\AERMigrations\201508060424329_AnimalesUpdate14.resx">
+      <DependentUpon>201508060424329_AnimalesUpdate14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contextos\AERMigrations\201508061828441_AnimalesUpdate15.resx">
+      <DependentUpon>201508061828441_AnimalesUpdate15.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contextos\IdentityMigrations\201507272036174_InitialCreate.resx">
       <DependentUpon>201507272036174_InitialCreate.cs</DependentUpon>

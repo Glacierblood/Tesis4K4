@@ -154,12 +154,12 @@ namespace FinalTest1.Controllers.EntityControllers
             return Json(especies, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult getRazas(int intCatID)
+        public ActionResult getRazas(int intEspID)
         {
 
             AerDb db = new AerDb();
             var razas = db.Razas
-                .Where(p => p.especieID == intCatID)
+                .Where(p => p.especieID == intEspID)
                 .Select(p => new { p.Id, p.nombre })
                 .OrderBy(p => p.nombre);
             return Json(razas, JsonRequestBehavior.AllowGet);

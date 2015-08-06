@@ -31,7 +31,7 @@
             var catid = $(this).find(":selected").val();
             if (catid.length > 0) {
                 // Populate products.
-                $.getJSON('/Animal/getRazas', { intCatID: catid }, function (data) {
+                $.getJSON('/Animal/getRazas', { intEspID: catid }, function (data) {
                     // Ajax success callback function.
                     // Populate dropdown from Json data returned from server.
                     $('#razaId option').remove();

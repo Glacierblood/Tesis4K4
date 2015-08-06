@@ -88,7 +88,7 @@
                 $('#razaId option').remove();
                 $('#razaId').append('<option value=""></option');
                 // Populate categories when the page is loaded.
-                $.getJSON('getEspecies', function (data) {
+                $.getJSON('/Animal/getEspecies', function (data) {
                     // Ajax success callback function.
                     // Populate dropdown from Json data returned from server.
                     $('#especieId option').remove();
@@ -107,7 +107,7 @@
                     var catid = $(this).find(":selected").val();
                     if (catid.length > 0) {
                         // Populate products.
-                        $.getJSON('getRazas', { intCatID: catid }, function (data) {
+                        $.getJSON('/Animal/getRazas', { intEspID: catid }, function (data) {
                             // Ajax success callback function.
                             // Populate dropdown from Json data returned from server.
                             $('#razaId option').remove();
@@ -146,7 +146,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Ir a la lista", "Index")
 </div>
 
 @section Scripts {
